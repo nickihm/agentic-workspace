@@ -13,6 +13,7 @@ workspace/
 ├── .obsidian/         # Obsidian vault config (the vault root is this folder)
 ├── Apps/              # Code projects, one git repo per subdirectory
 │   └── PORTS.md       # Port inventory for every app and service on this machine
+├── Assets/            # Reusable material: Templates/ for documents, Samples/ for example emails and messages
 ├── Inbox/             # Files dropped here for processing (downloads, exports, screenshots)
 ├── Notes/             # Knowledge base (PARA method, Obsidian markdown)
 │   ├── AGENTS.md      # Index of the knowledge base; read it before working in Notes/
