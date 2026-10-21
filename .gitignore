@@ -1,0 +1,21 @@
+# Each app is its own git repo; only the port inventory is tracked here
+Apps/*
+!Apps/PORTS.md
+
+# Local-only agent settings
+.claude/settings.local.json
+
+# Obsidian UI state, rewritten on every open
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Secrets and credentials
+.env
+.env.*
+*.pem
+*.key
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp
