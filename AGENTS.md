@@ -69,6 +69,17 @@ Skills live in `.claude/skills/<name>/SKILL.md`. Load the matching skill before 
 | `new-week-file` | Create next week's `Notes/Daily/YYYY-WN.md` with carry-forward and Long Term items. |
 | `archive-week` | Move finished week files and Long Term rows into `Notes/Daily/Archive/`. |
 | `weekly-calendar-sync` | Add the week's calendar events under the day bullets. |
+| `determining-top-of-mind` | Rebuild `Notes/Daily/Top of Mind.md` from open highlights in account and project notes. |
+| `completing-tasks` | Mark a task done in `Top of Mind.md` and strike its highlight in the source note. |
+| `inbox-processing` | File everything in `Inbox/` into the right note, account, or calendar. |
+| `meeting-prepper` | Write a dated prep entry in an account or project note before a meeting. |
+| `opening-notes` | Open a note in Obsidian by name. |
+| `drafting-email` | Draft an email in the user's voice, matched to `Assets/Samples/Emails/`. |
+| `collect-email-newsletters` | Digest newsletters that arrived since the last run into a dated note. |
+| `researching` | Answer a question from primary sources with citations. |
+| `architecture-diagram` | Draw architecture, data flow, network, and deployment diagrams as draw.io files. |
+| `building-decks` | Build a `.pptx` from a template in `Assets/Templates/`. |
+| `financial-modeling` | Build a cost, price, or financial model as an Excel workbook with live formulas. |
 
 ## Git workflow
 
