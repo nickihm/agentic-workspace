@@ -1,4 +1,4 @@
-# Workspace Template
+# Agentic Workspace
 
 Automate your work by connecting your favorite AI agents to a unified knowledge workspace. Built for knowledge workers juggling many clients, projects, and responsibilities. No coding required.
 
