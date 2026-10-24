@@ -14,19 +14,19 @@ workspace/
 ├── Apps/              # Code projects, one git repo per subdirectory
 │   └── PORTS.md       # Port inventory for every app and service on this machine
 ├── Assets/            # Reusable material: Templates/ for documents (see its AGENTS.md), Samples/ for example emails and messages
-├── Inbox/             # Files dropped here for processing (downloads, exports, screenshots)
+├── Inbox/             # Where screenshots and downloads land (set up by setup-inbox); not tracked
 ├── Notes/             # Knowledge base (PARA method, Obsidian markdown)
 │   ├── AGENTS.md      # Index of the knowledge base; read it before working in Notes/
 │   ├── Daily/         # Weekly notes, Long Term.md, Top of Mind.md
-│   ├── Accounts/      # One folder per client, employer, or organization
-│   ├── Projects/      # Work with an end date and an outcome
-│   ├── Areas/         # Ongoing responsibilities with no end date
+│   ├── Accounts/      # One folder per client, employer, or organization, each with an Assets/ folder
+│   ├── Projects/      # Work with an end date and an outcome, each with an Assets/ folder
+│   ├── Areas/         # Ongoing responsibilities with no end date, each with an Assets/ folder
 │   ├── Resources/     # Reference material by topic
 │   └── Archive/       # Finished or inactive items from the other folders
 └── Outbox/            # Files produced for someone else (reports, exports, deliverables)
 ```
 
-The workspace root is a git repo. It tracks `AGENTS.md`, `.claude/`, `.obsidian/`, `Notes/`, `Inbox/`, `Outbox/`, and `Apps/PORTS.md`. Each directory under `Apps/` is its own git repo with its own remote; the root `.gitignore` excludes them.
+The workspace root is a git repo. It tracks `AGENTS.md`, `.claude/`, `.obsidian/`, `Notes/`, `Outbox/`, and `Apps/PORTS.md`. `Inbox/` is tracked as an empty folder only; its files stay local until they are filed. Each directory under `Apps/` is its own git repo with its own remote; the root `.gitignore` excludes them.
 
 ## Notes
 
@@ -56,7 +56,8 @@ Each directory under `Apps/` is a separate code project and a separate git repo.
 
 ## Inbox and Outbox
 
-- `Inbox/` is where files arrive. Process them into `Notes/` or `Apps/`, then delete or archive the original. An empty inbox is the goal.
+- `Inbox/` is where files arrive. `setup-inbox` points the computer's screenshots and browser downloads here. `inbox-processing` files them into `Notes/` or `Apps/`, then deletes the original. An empty inbox is the goal.
+- Screenshots are filed into the `Assets/` folder of the account, area, or project they belong to, matched by the meeting happening when they were taken and by what they show, and embedded in that note's log.
 - `Outbox/` is where finished deliverables go so they are easy to find and send. Do not use it as working storage.
 
 ## Skills
@@ -71,7 +72,8 @@ Skills live in `.claude/skills/<name>/SKILL.md`. Load the matching skill before 
 | `weekly-calendar-sync` | Add the week's calendar events under the day bullets. |
 | `determining-top-of-mind` | Rebuild `Notes/Daily/Top of Mind.md` from open highlights in account, area, and project notes. |
 | `completing-tasks` | Mark a task done in `Top of Mind.md` and strike its highlight in the source note. |
-| `inbox-processing` | File everything in `Inbox/` into the right note, account, or calendar. |
+| `setup-inbox` | Point screenshots and browser downloads at `Inbox/`. Run once per machine. |
+| `inbox-processing` | File everything in `Inbox/` into the right note, account, or calendar. Screenshots go to the matching `Assets/` folder and log. |
 | `meeting-prepper` | Write a dated prep entry in an account, area, or project note before a meeting. |
 | `opening-notes` | Open a note in Obsidian by name. |
 | `drafting-email` | Draft an email in the user's voice, matched to `Assets/Samples/Emails/`. |
@@ -104,3 +106,4 @@ Make only the requested changes and do not alter other functionality. Implement 
 3. Set the category columns in `Notes/Daily/Long Term.md` to your own life areas and extend the table with `.claude/skills/archive-week/scripts/long_term_rows.py`.
 4. Create `Notes/Daily/Calendars.md` if you use `weekly-calendar-sync`.
 5. Add your document templates (`.pptx`, `.docx`, `.xlsx`) to `Assets/Templates/`.
+6. Run the `setup-inbox` skill so screenshots and downloads land in `Inbox/`.
