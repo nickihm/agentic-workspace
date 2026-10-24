@@ -42,17 +42,43 @@ Build small tools of your own with your agent. Each app gets its own folder and 
 
 ## Workspace Structure
 
-Your agent knows this layout, so you don't need to.
+Your agent knows this layout, so you don't need to. Each account, project, and area is a folder holding a note of the same name and an Assets folder for its screenshots and files. Accounts can hold their own projects.
 
 ```
 workspace/
-├── AGENTS.md     # Context for agents: layout, conventions, workflow
-├── .claude/      # Skills and agent config
-├── .obsidian/    # Obsidian vault config and plugins
-├── Apps/         # Code projects, one git repo each (ignored except PORTS.md)
-├── Inbox/        # Screenshots and downloads land here, to be filed (not tracked)
-├── Notes/        # Knowledge base (PARA + Daily + Accounts)
-└── Outbox/       # Finished deliverables
+├── AGENTS.md                              # Context for agents: layout, conventions, workflow
+├── .claude/                               # Skills and agents
+├── .obsidian/                             # Obsidian settings and plugins
+├── Apps/                                  # Apps you build, one folder and git repo each
+│   └── PORTS.md                           # Where each app runs
+├── Assets/
+│   ├── Templates/                         # Your PowerPoint, Word, and Excel templates
+│   └── Samples/                           # Example emails and messages in your voice
+├── Inbox/                                 # Screenshots and downloads land here, to be filed
+├── Notes/                                 # Knowledge base
+│   ├── Daily/
+│   │   ├── 2027-W1.md                     # One to-do file per week
+│   │   ├── Long Term.md                   # Calendar of weeks for big dates and goals
+│   │   ├── Top of Mind.md                 # Where everything stands and what needs to be done
+│   │   └── Archive/                       # Past weeks
+│   ├── Accounts/                          # Clients, employers, and organizations
+│   │   └── Sample Company, Inc./
+│   │       ├── Sample Company, Inc..md    # Overview, contacts, interaction log
+│   │       ├── Assets/                    # Screenshots and files for this account
+│   │       └── Sample Project/            # A project for this account
+│   │           ├── Sample Project.md      # Goal, timeline, status, to-dos, log
+│   │           └── Assets/
+│   ├── Projects/                          # Projects not tied to an account
+│   │   └── Sample Website Refresh/
+│   │       ├── Sample Website Refresh.md
+│   │       └── Assets/
+│   ├── Areas/                             # Ongoing responsibilities, such as home or health
+│   │   └── Sample Home Maintenance/
+│   │       ├── Sample Home Maintenance.md
+│   │       └── Assets/
+│   ├── Resources/                         # Reference material, including newsletter digests
+│   └── Archive/                           # Finished projects and inactive areas
+└── Outbox/                                # Finished deliverables
 ```
 
 ## Getting Started
