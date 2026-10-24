@@ -26,7 +26,7 @@ workspace/
 └── Outbox/            # Files produced for someone else (reports, exports, deliverables)
 ```
 
-The workspace root is a git repo. It tracks `AGENTS.md`, `.claude/`, `.obsidian/`, `Notes/`, `Outbox/`, and `Apps/PORTS.md`. `Inbox/` is tracked as an empty folder only; its files stay local until they are filed. Each directory under `Apps/` is its own git repo with its own remote; the root `.gitignore` excludes them.
+The workspace root is a git repo. It tracks `AGENTS.md`, `.claude/`, `.obsidian/`, `Notes/`, `Outbox/`, and `Apps/PORTS.md`. `Inbox/` is tracked as an empty folder only; its files stay local until they are filed. Each directory under `Apps/` is its own git repo with its own remote; the root `.gitignore` excludes them, except `Apps/sample-app/`, which ships with the template as a working example.
 
 ## Notes
 
@@ -36,6 +36,7 @@ The workspace root is a git repo. It tracks `AGENTS.md`, `.claude/`, `.obsidian/
 - `Notes/Daily/Long Term.md` is a table with one row per week and one column per life area. It is the week-level calendar.
 - `Notes/Daily/Top of Mind.md` is the running summary: priorities first, then one block per account, area, and project with the latest activity and open to-dos.
 - Name new folders and documents in Title Case with spaces, not kebab-case.
+- Every folder has an `AGENTS.md` that says what it holds and how to work in it. Read it before working in a folder, and add one to every folder you create (a new account, project, area, or resource topic).
 - Obsidian may write non-breaking spaces into files. When an exact-match edit fails, use a script instead of the editor.
 
 ## Apps
@@ -44,7 +45,7 @@ Each directory under `Apps/` is a separate code project and a separate git repo,
 
 | App | Folder | Stack | Run | Test |
 |---|---|---|---|---|
-| (none yet) | | | | |
+| Sample App (delete once you have your own) | `Apps/sample-app/` | Python standard library, one HTML page, JSON file | `python3 app.py` (port 8400) | `python3 -m unittest -v` |
 
 ## Ports
 

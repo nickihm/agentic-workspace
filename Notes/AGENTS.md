@@ -19,6 +19,7 @@ The knowledge base. An Obsidian vault organized by the PARA method: Projects, Ar
 
 ## Conventions
 
+- Every folder has an `AGENTS.md` saying what it holds. Create one with each new folder, following the one in a sibling folder.
 - Title Case with spaces for folder and file names. `Sample Company, Inc.md`, not `sample-company-inc.md`.
 - One idea per note. Link with `[[wikilinks]]`.
 - Tabs for indentation in bullet lists. Dash bullets. Checkboxes (`- [ ]`) only for things that get done.

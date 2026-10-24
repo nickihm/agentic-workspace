@@ -22,7 +22,7 @@ If the user points at a note, an interaction log entry, or a thread, read it fir
 
 ## Voice
 
-Read 1-2 files in `Assets/Samples/Emails/` before drafting, picking the closest in purpose. Copy their greeting, sign-off, signature, sentence length, and level of formality.
+Read 1-2 files in `Assets/Samples/Emails/` before drafting, picking the closest in purpose. Skip `AGENTS.md`. If the only sample is the template's `Sample Follow-Up After Meeting.md`, use it and suggest the user add their own. Copy their greeting, sign-off, signature, sentence length, and level of formality.
 
 If the folder is empty, use these defaults and tell the user that adding 3-5 of their own sent emails there (as `.md` or `.txt`, with names and addresses removed) will make drafts sound like them:
 

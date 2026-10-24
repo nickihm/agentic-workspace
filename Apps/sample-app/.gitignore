@@ -1,0 +1,4 @@
+# Saved data and secrets stay on this computer
+data/
+.env
+__pycache__/
