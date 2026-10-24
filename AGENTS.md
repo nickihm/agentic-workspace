@@ -36,6 +36,7 @@ The workspace root is a git repo. It tracks `AGENTS.md`, `.claude/`, `.obsidian/
 - `Notes/Daily/Long Term.md` is a table with one row per week and one column per life area. It is the week-level calendar.
 - `Notes/Daily/Top of Mind.md` is the running summary: priorities first, then one block per account, area, and project with the latest activity and open to-dos.
 - Name new folders and documents in Title Case with spaces, not kebab-case.
+- Every folder has an `AGENTS.md` that says what it holds and how to work in it. Read it before working in a folder, and add one to every folder you create (a new account, project, area, or resource topic).
 - Obsidian may write non-breaking spaces into files. When an exact-match edit fails, use a script instead of the editor.
 
 ## Apps

@@ -1,11 +1,13 @@
 # Each app is its own git repo; only the port inventory and the sample app are tracked here
 Apps/*
 !Apps/PORTS.md
+!Apps/AGENTS.md
 !Apps/sample-app/
 
 # Screenshots and downloads stay local until inbox-processing files them
 Inbox/*
 !Inbox/.gitkeep
+!Inbox/AGENTS.md
 
 # Local-only agent settings
 .claude/settings.local.json

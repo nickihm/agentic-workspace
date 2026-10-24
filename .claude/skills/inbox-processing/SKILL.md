@@ -23,6 +23,8 @@ Code goes in `Apps/`, not `Notes/`. Finished deliverables go in `Outbox/`.
 
 ### 1. List the inbox and classify each file
 
+Skip `AGENTS.md` and `.gitkeep`; they belong to the folder.
+
 | Kind | How to tell | Go to |
 |---|---|---|
 | Meeting notes | Rough notes, a transcript, or minutes | Step 2 |
@@ -106,7 +108,7 @@ Each account, area, and project folder has an `Assets/` subfolder for its images
 
 ### 6. Clear the inbox
 
-After a file's content is filed, delete the original from `Inbox/`, except `Inbox/.gitkeep`. Leave any file you could not process.
+After a file's content is filed, delete the original from `Inbox/`, except `Inbox/.gitkeep` and `Inbox/AGENTS.md`. Leave any file you could not process.
 
 ### 7. Report
 
