@@ -71,12 +71,14 @@ Skills live in `.claude/skills/<name>/SKILL.md`. Load the matching skill before 
 | `archive-week` | Move finished week files and Long Term rows into `Notes/Daily/Archive/`. |
 | `weekly-calendar-sync` | Add the week's calendar events under the day bullets. |
 | `determining-top-of-mind` | Rebuild `Notes/Daily/Top of Mind.md` from open highlights in account, area, and project notes. |
+| `prioritizing-tasks` | Sort Top of Mind to-dos with the Eisenhower matrix, estimate time, and timebox them in the week file and calendar. |
 | `completing-tasks` | Mark a task done in `Top of Mind.md` and strike its highlight in the source note. |
 | `setup-inbox` | Point screenshots and browser downloads at `Inbox/`. Run once per machine. |
 | `inbox-processing` | File everything in `Inbox/` into the right note, account, or calendar. Screenshots go to the matching `Assets/` folder and log. |
 | `meeting-prepper` | Write a dated prep entry in an account, area, or project note before a meeting. |
 | `opening-notes` | Open a note in Obsidian by name. |
 | `drafting-email` | Draft an email in the user's voice, matched to `Assets/Samples/Emails/`. |
+| `collect-email-important` | Log email addressed to the user or needing a follow-up in the matching account, area, or project log. |
 | `collect-email-newsletters` | Digest newsletters that arrived since the last run into a dated note. |
 | `researching` | Answer a question from primary sources with citations. |
 | `architecture-diagram` | Draw architecture, data flow, network, and deployment diagrams as draw.io files. |
@@ -104,6 +106,6 @@ Make only the requested changes and do not alter other functionality. Implement 
 1. Replace the sample content in `Notes/Accounts/`, `Notes/Areas/`, `Notes/Projects/`, and `Notes/Daily/` with your own.
 2. Fill the Apps table above and `Apps/PORTS.md` as you add projects.
 3. Set the category columns in `Notes/Daily/Long Term.md` to your own life areas and extend the table with `.claude/skills/archive-week/scripts/long_term_rows.py`.
-4. Create `Notes/Daily/Calendars.md` if you use `weekly-calendar-sync`.
+4. Create `Notes/Daily/Calendars.md` if you use `weekly-calendar-sync` or `prioritizing-tasks`, and `Notes/Daily/Important Email.md` if you use `collect-email-important`. Each skill offers to create its file on first run.
 5. Add your document templates (`.pptx`, `.docx`, `.xlsx`) to `Assets/Templates/`.
 6. Run the `setup-inbox` skill so screenshots and downloads land in `Inbox/`.
