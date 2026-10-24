@@ -30,7 +30,7 @@ Code goes in `Apps/`, not `Notes/`. Finished deliverables go in `Outbox/`.
 | Document | PDF, Office file, image, export, clipping | Step 4 |
 | Unknown | Anything else | Ask |
 
-For each file, work out which account or project it is about by matching names against the folders in `Notes/Accounts/` and `Notes/Projects/`. If you cannot tell, ask.
+For each file, work out which account or project it is about by matching names against the folders in `Notes/Accounts/`, `Notes/Areas/`, and `Notes/Projects/`. If you cannot tell, ask.
 
 Show the user the plan as a table (file, kind, destination) and wait for confirmation before you change anything.
 
@@ -51,7 +51,7 @@ Show the user the plan as a table (file, kind, destination) and wait for confirm
    - Use tabs for indentation and dash bullets.
    - Highlight only action items and follow-ups that the source states. Do not invent new ones or turn a discussion point into a task.
    - Keep names, numbers, and dates exactly as they appear in the source. If something is unclear, keep the original wording and flag it to the user.
-3. Insert the entry under `### Interaction Log` in an account note, or `### Log` in a project note, in date order with the newest first. If a `(prep)` entry for the same meeting exists (see `meeting-prepper`), fill in its `Notes:` and remove `(prep)` from the title instead of adding a duplicate.
+3. Insert the entry under `### Interaction Log` in an account or area note, or `### Log` in a project note, in date order with the newest first. If a `(prep)` entry for the same meeting exists (see `meeting-prepper`), fill in its `Notes:` and remove `(prep)` from the title instead of adding a duplicate.
 4. If a new attendee appears, offer to add them to the note's `### Contacts` or `### People` section. Do not add them without asking.
 
 ### 3. Calendar files (`.ics`)

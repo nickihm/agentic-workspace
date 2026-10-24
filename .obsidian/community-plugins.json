@@ -1,9 +1,3 @@
 [
-  "print",
-  "show-hidden-files",
-  "periodic-notes",
-  "pdf-printer",
-  "obsidian-outliner",
-  "obsidian-full-calendar",
-  "obsidian-excalidraw-plugin"
+  "obsidian-outliner"
 ]

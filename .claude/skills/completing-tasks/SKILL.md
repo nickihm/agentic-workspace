@@ -18,7 +18,7 @@ Only the user decides a task is done. This skill records that decision. It never
 
 Search `Notes/Daily/Top of Mind.md` for open checkboxes (`- [ ]`) that match the user's words. Search by short, distinctive fragments, because the user paraphrases.
 
-Each to-do ends with the date of the entry it came from, for example `(2027-01-05)`. The bold wikilink above it (`- **[[Sample Company, Inc.]]**`, and a nested `**[[Sample Project]]**` if present) tells you which note it came from. The same task can appear more than once, for example under `#### Priorities` and under its account. Check every copy.
+Each to-do ends with the date of the entry it came from, for example `(2027-01-05)`. The bold wikilink above it (`- **[[Sample Company, Inc.]]**`, and a nested `**[[Sample Project]]**` if present) tells you which note it came from. Areas and standalone projects sit under plain `**Areas**` and `**Projects**` group bullets; the group is not a note, the wikilink under it is. The same task can appear more than once, for example under `#### Priorities` and under its account. Check every copy.
 
 - Exactly one task matches: continue.
 - More than one task, or no clear match: show each candidate line and ask. Never guess.
@@ -30,6 +30,8 @@ Resolve the wikilink to a file:
 
 - Account: `Notes/Accounts/<Name>/<Name>.md`
 - Account project: `Notes/Accounts/<Name>/<Project>/<Project>.md`
+- Area: `Notes/Areas/<Area>/<Area>.md`
+- Area project: `Notes/Areas/<Area>/<Project>/<Project>.md`
 - Standalone project: `Notes/Projects/<Project>/<Project>.md` or `Notes/Projects/<Project>.md`
 
 Search the file for a fragment of the to-do text. Highlights are often unclosed, so a line may start with `==` and have no closing `==`. Use the to-do's date to pick the right entry when the same text appears more than once.
