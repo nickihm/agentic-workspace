@@ -43,7 +43,7 @@ A `- [x]` in `Top of Mind.md` is the user's. Never turn it back into `- [ ]`. Ke
    - If the line is `- [ ] ==text==`, also change `- [ ]` to `- [x]`.
    - One clear match: edit it. No match or several matches: list them in chat and ask. Never guess.
 4. **Collect open items.** In every account, account project, area, area project, and standalone project note, read the dated entries from the last 90 days (or the window the user asks for). Collect each highlight that is not struck. Record the entry date with it.
-5. **Write the file** in this layout, with tabs for indentation:
+5. **Write the file** in this layout, with tabs for indentation. Keep the frontmatter block at the top of the file unchanged:
 
    ```markdown
    #### Priorities

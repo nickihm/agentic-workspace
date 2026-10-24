@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Notes/Areas/Sample Home Maintenance Folder Guide
+description: 'An area: an ongoing responsibility.'
+tags:
+- folder-guide
+- notes
+---
+
 # Sample Home Maintenance
 
 An area: an ongoing responsibility. Placeholder content; replace or delete it.

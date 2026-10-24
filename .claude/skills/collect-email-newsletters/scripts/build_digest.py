@@ -96,7 +96,10 @@ def build(args) -> dict:
 
     window = f"{start.astimezone():%Y-%m-%d %H:%M} to {end.astimezone():%Y-%m-%d %H:%M %Z}"
     total = sum(len(v) for v in groups.values())
-    out = [f"# Newsletters: {args.today}", "", f"Window: {window}", "",
+    out = ["---", "type: Newsletter Digest", f"title: \"Newsletters: {args.today}\"",
+           f"description: \"Newsletter stories received {window}.\"",
+           "tags:", "- resources", "- newsletters", "---", "",
+           f"# Newsletters: {args.today}", "", f"Window: {window}", "",
            f"{total} item{'' if total == 1 else 's'} from {len(emails)} email{'' if len(emails) == 1 else 's'}.", ""]
     for name in sorted(groups, key=lambda k: (k == "Other", k.lower())):
         out += [f"## {clean(name)}", ""]

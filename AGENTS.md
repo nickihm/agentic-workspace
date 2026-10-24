@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Workspace Guide
+description: 'Workspace guide for agents: folder layout, notes conventions, apps and ports, skills, git workflow, and how to customize the template.'
+tags:
+- folder-guide
+- workspace
+---
+
 # AGENTS.md
 
 This file gives AI coding agents the context they need to work in this workspace. Read it first, every time.
@@ -36,6 +45,7 @@ The workspace root is a git repo. It tracks `AGENTS.md`, `.claude/`, `.obsidian/
 - `Notes/Daily/Long Term.md` is a table with one row per week and one column per life area. It is the week-level calendar.
 - `Notes/Daily/Top of Mind.md` is the running summary: priorities first, then one block per account, area, and project with the latest activity and open to-dos.
 - Name new folders and documents in Title Case with spaces, not kebab-case.
+- Every markdown file starts with YAML frontmatter in the Open Knowledge Format (OKF), the format OpenWiki uses, so agents can find a note by its type and description without reading it. The fields and the types this workspace uses are in `Notes/AGENTS.md`. Repository `README.md` files are the exception, because GitHub would render the frontmatter as a table.
 - Every folder has an `AGENTS.md` that says what it holds and how to work in it. Read it before working in a folder, and add one to every folder you create (a new account, project, area, or resource topic).
 - Obsidian may write non-breaking spaces into files. When an exact-match edit fails, use a script instead of the editor.
 

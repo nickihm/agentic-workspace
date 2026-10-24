@@ -66,7 +66,7 @@ Show the user the plan as a table (file, kind, destination) and wait for confirm
 ### 4. Documents
 
 1. Move the file into the account, project, area, or resource folder it belongs to. Keep the original file name unless it is unreadable; then rename it in Title Case with spaces.
-2. If the destination folder does not exist, ask before creating it.
+2. If the destination folder does not exist, ask before creating it. A new folder gets its note with OKF frontmatter and an `AGENTS.md` (see `Notes/AGENTS.md`).
 3. If the document has action items or decisions, say so in chat. Do not write highlights from it on your own.
 
 ### 5. Screenshots

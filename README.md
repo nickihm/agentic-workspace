@@ -20,7 +20,7 @@ Screenshots and downloads land in one inbox. Say "Process my inbox," and your ag
 
 Your activity with each account, project, and area is recorded in its interaction log, where action items and updates are easy to lose. Say "Update top of mind," and your agent scans everything for the latest activity and writes an executive summary: a three- to five-sentence status for each account, project, and area, followed by its open to-dos. You get a bird's-eye view of where everything stands and what needs to be done.
 
-### Prioritizing and Timeboxing
+### Prioritizing and Time-boxing
 
 Your agent sorts your top-of-mind to-dos using the Eisenhower matrix, estimates the time each will take, and blocks out time for them over the next week within your working hours, on your calendar and in your weekly to-do files.
 
@@ -28,7 +28,7 @@ Your agent sorts your top-of-mind to-dos using the Eisenhower matrix, estimates 
 
 Each week gets its own to-do file. Say "Start a new week" on Sunday, and your agent builds next week's file, carries over unfinished to-dos, and adds your meetings. The Long Term file is a calendar of weeks for big dates and goals, and each one appears in your weekly file when its week arrives.
 
-### Knowledge Work
+### Creating Documents
 
 Your agent drafts the work, drawing on what your notes already say about the account or project. It researches questions with a source link for every claim, builds PowerPoint decks on your own template, creates Excel models for costs and pricing with live formulas, and draws diagrams of systems and processes that you can edit in draw.io.
 

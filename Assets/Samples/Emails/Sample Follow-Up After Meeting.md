@@ -1,3 +1,12 @@
+---
+type: Email Sample
+title: Sample Follow-Up After Meeting
+description: 'Placeholder sample of the user''s email voice: a short meeting follow-up with a timeline and two asks.'
+tags:
+- samples
+- email
+---
+
 Subject: Rollout timeline and next steps
 
 Hi Pat,

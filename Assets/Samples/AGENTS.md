@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Assets/Samples Folder Guide
+description: Examples of the user's own writing.
+tags:
+- folder-guide
+- assets
+---
+
 # Samples
 
 Examples of the user's own writing. Agents read them to match the user's voice: greeting, sign-off, sentence length, and tone.

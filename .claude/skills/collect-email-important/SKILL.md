@@ -12,6 +12,15 @@ Each run covers the time since the previous run, finds the email that needs the 
 The settings live in `Notes/Daily/Important Email.md`:
 
 ```markdown
+---
+type: Settings
+title: Important Email
+description: Settings for collect-email-important.
+tags:
+- settings
+- email
+---
+
 # Important Email
 
 My addresses: you@example.com, you@company.com

@@ -1,3 +1,11 @@
+---
+type: Area
+title: Sample Home Maintenance
+description: 'Placeholder area of responsibility: overview, projects, and interaction log.'
+tags:
+- area
+---
+
 ### Overview
 
 3-5 sentence summary.

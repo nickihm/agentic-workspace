@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Notes/Accounts/Sample Company, Inc. Folder Guide
+description: 'An account: a client, employer, or organization.'
+tags:
+- folder-guide
+- notes
+---
+
 # Sample Company, Inc.
 
 An account: a client, employer, or organization. Placeholder content; replace or delete it.

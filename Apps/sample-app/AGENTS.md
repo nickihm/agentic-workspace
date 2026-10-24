@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Apps/sample-app Folder Guide
+description: 'A working example of an app in Apps/: a to-do list served on 127.0.0.1:8400.'
+tags:
+- folder-guide
+- apps
+---
+
 # Sample App
 
 A working example of an app in `Apps/`: a to-do list served on `127.0.0.1:8400`. Read `README.md` to run and test it and `ARCHITECTURE.md` for its design and critical flows.

@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Notes/Accounts/Sample Company, Inc./Sample Project Folder Guide
+description: A project for Sample Company, Inc.
+tags:
+- folder-guide
+- notes
+---
+
 # Sample Project
 
 A project for Sample Company, Inc. Placeholder content; replace or delete it.

@@ -1,3 +1,12 @@
+---
+type: Top of Mind
+title: Top of Mind
+description: Priorities, then the status and open to-dos of every account, area, and project.
+tags:
+- daily
+- to-dos
+---
+
 #### Priorities
 
 - [ ] Sample Todo

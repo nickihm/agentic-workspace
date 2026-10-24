@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Notes Folder Guide
+description: 'Knowledge base index: what each Notes folder holds, note conventions, frontmatter, and where a new note goes.'
+tags:
+- folder-guide
+- notes
+---
+
 # Notes
 
 The knowledge base. An Obsidian vault organized by the PARA method: Projects, Areas, Resources, Archive, plus two folders this workspace adds: Daily and Accounts.
@@ -19,6 +28,7 @@ The knowledge base. An Obsidian vault organized by the PARA method: Projects, Ar
 
 ## Conventions
 
+- Every note starts with OKF frontmatter (see Frontmatter below).
 - Every folder has an `AGENTS.md` saying what it holds. Create one with each new folder, following the one in a sibling folder.
 - Title Case with spaces for folder and file names. `Sample Company, Inc.md`, not `sample-company-inc.md`.
 - One idea per note. Link with `[[wikilinks]]`.
@@ -27,6 +37,26 @@ The knowledge base. An Obsidian vault organized by the PARA method: Projects, Ar
 - Highlight follow-ups and action items in interaction logs with `==double equals==` so they stand out in Obsidian.
 - Images and screenshots go in the `Assets/` folder of the account, area, or project they belong to (a project's own `Assets/`, not its account's), named `YYYY-MM-DD HH.MM.SS <Short Description>.png`. Embed them in the log entry they belong to with the full vault path: `![[Notes/Accounts/<Name>/Assets/<file>]]`. `Assets` is a reserved folder name; never name a project `Assets`.
 - Obsidian may write non-breaking spaces into files. When an exact-match edit fails, use a script.
+
+## Frontmatter
+
+Every note starts with a YAML frontmatter block in the Open Knowledge Format (OKF v0.2), the format OpenWiki reads and writes. Obsidian shows it as the note's properties.
+
+```yaml
+---
+type: Account
+title: Acme Corp
+description: Logistics client; quarterly business reviews and the warehouse rollout project.
+tags:
+- account
+---
+```
+
+- `type` is required. Use one of: `Account`, `Project`, `Area`, `Week`, `Long Term Plan`, `Top of Mind`, `Newsletter Digest`, `Resource`, `Settings`, `Folder Guide`, `Email Sample`, `Message Sample`, `Architecture`, `Port Inventory`.
+- `title` is the note's name. `description` is one sentence saying what the note is about, written with the names and terms someone would search for. `tags` is a list of lowercase words.
+- Optional: `resource`, a URL or ID for the thing the note describes (a website, a shared drive folder, a CRM record).
+- Keep the frontmatter when you edit a note. When you rewrite a note whole, carry it over and update `description` if the note's scope changed.
+- Create it with every new note. Copy it from a sibling note of the same type and change the values.
 
 ## Where a new note goes
 

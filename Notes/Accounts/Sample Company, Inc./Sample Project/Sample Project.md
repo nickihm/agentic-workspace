@@ -1,3 +1,12 @@
+---
+type: Project
+title: Sample Project
+description: 'Placeholder project for Sample Company, Inc.: goal, timeline, people, status, to-dos, and log.'
+tags:
+- project
+- sample-company-inc
+---
+
 ### Overview
 
 3-5 sentence summary of the project: what it is, why the account wants it, where it stands.
