@@ -22,7 +22,7 @@ Your activity with each account, project, and area is recorded in its interactio
 
 ### Prioritizing and Timeboxing
 
-Your agent sorts your top-of-mind to-dos using the Eisenhower matrix, estimates the time each will take, and blocks out time for them on your calendar and in your weekly to-do file.
+Your agent sorts your top-of-mind to-dos using the Eisenhower matrix, estimates the time each will take, and blocks out time for them over the next week within your working hours, on your calendar and in your weekly to-do files.
 
 ### Long-Term Planning
 
@@ -34,11 +34,11 @@ Your agent drafts the work, drawing on what your notes already say about the acc
 
 ### Managing Communication
 
-Email and meetings are where requests arrive and follow-ups get lost. Your agent reads your email for the questions, requests, and deadlines waiting on you and logs each one with the right account, project, or area. Before a meeting, it writes a recap, open items, and talking points into the meeting's notes. It drafts emails in your own voice and never sends anything without your approval. When you say "I sent the proposal," it checks the task off everywhere. It also turns your newsletters into a digest with one line per story and its link.
+Email and meetings are where requests arrive and follow-ups get lost. Your agent reads your email for the questions, requests, and deadlines waiting on you, logs each conversation with the right account, project, or area, and marks it read. Before a meeting, it writes a recap, open items, and talking points into the meeting's notes. It drafts emails in your own voice and never sends anything without your approval. When you say "I sent the proposal," it checks the task off everywhere. It also turns your newsletters into a digest with one line per story and its link, and marks them read.
 
 ### Building Apps
 
-Build small tools of your own with your agent. Each app gets its own folder and version history in the Apps folder. Software development skills guide your agent through architecture, building, code review, QA, and branch management, and a ports list records where each app runs so apps don't conflict.
+Build small tools of your own with your agent. Each app gets its own folder and version history in the Apps folder. A large model designs each app and reviews every change, a smaller and cheaper model writes the code, and a QA agent tests it before anything is merged. A ports list records where each app runs so apps don't conflict.
 
 ## Workspace Structure
 

@@ -1,18 +1,25 @@
 ---
 name: prioritizing-tasks
-description: Sort the open to-dos in Notes/Daily/Top of Mind.md with the Eisenhower matrix, estimate how long each takes, and timebox the important ones into free time this week, as bullets under the day in the weekly file and, if a calendar is connected, as focus blocks on the calendar. Use when the user says "prioritize my tasks", "what should I work on", "plan my week", "timebox my to-dos", or "block time for my to-dos".
+description: Sort the open to-dos in Notes/Daily/Top of Mind.md with the Eisenhower matrix, estimate how long each takes, and timebox the important ones into free working hours over the next 7 days, as bullets under the day in the Notes/Daily week files and, if a calendar is connected, as focus blocks on the calendar. Use when the user says "prioritize my tasks", "what should I work on", "plan my week", "timebox my to-dos", or "block time for my to-dos".
 ---
 
 # Prioritizing Tasks
 
-Turn the open to-dos into a plan: what to do first, how long each takes, and when to do it.
+Turn the open to-dos into a plan: what to do first, how long each takes, and when to do it. The plan covers the next 7 days, inside working hours only.
 
 ## Inputs
 
 - `Notes/Daily/Top of Mind.md`: the open `- [ ]` items under `#### Priorities` and under each account, area, and project. If the file is more than a few days old, offer to run `determining-top-of-mind` first.
-- The current week file, `Notes/Daily/YYYY-WN.md`: the day bullets and the meetings already under them.
-- The calendar, if a calendar tool is connected: every event this week, so you know which time is free.
-- Working hours: a line in `Notes/Daily/Calendars.md` such as `Working hours: Mon-Fri 9am-5pm`. If it is missing, ask the user and add the line (create the file if needed).
+- The week files that cover the next 7 days, `Notes/Daily/YYYY-WN.md`: the day bullets and the meetings already under them. The window usually spans this week and next. If next week's file does not exist yet, create it with `new-week-file` first.
+- The calendar, if a calendar tool is connected: every event in the next 7 days, so you know which time is free.
+- Working hours, in `Notes/Daily/Calendars.md`:
+
+  ```
+  Working hours: Mon-Fri 9am-5pm
+  Lunch: 12pm-1pm
+  ```
+
+  If the lines are missing, ask the user and add them (create the file if needed). Days not listed are not working days.
 
 ## Steps
 
@@ -23,12 +30,12 @@ Put every open to-do in one quadrant:
 | Quadrant | Urgent | Important | Action |
 |---|---|---|---|
 | Do | yes | yes | Timebox in the next 1-2 working days |
-| Schedule | no | yes | Timebox later this week |
+| Schedule | no | yes | Timebox later in the 7-day window |
 | Delegate | yes | no | Suggest who could take it |
 | Later | no | no | Leave it; mention it once |
 
 - **Urgent:** a due date within 3 working days, overdue, or someone is waiting on the user. Use the to-do's date and the status line above it; an item older than 2 weeks with someone waiting counts as urgent.
-- **Important:** already under `#### Priorities`, tied to a deliverable or a client commitment, or tied to a goal in `Notes/Daily/Long Term.md` for this or next week.
+- **Important:** already under `#### Priorities`, tied to a deliverable or a client commitment, or tied to a goal in `Notes/Daily/Long Term.md` for this week or next.
 - When the notes do not say, ask instead of guessing. One question for the whole batch, not one per item.
 - For Delegate, name a person only if they appear in that note's `### Contacts` or `### People`.
 
@@ -38,14 +45,14 @@ Give each Do and Schedule item an estimate in 15-minute steps (15m, 30m, 45m, 1h
 
 ### 3. Find free time
 
-From now to the end of the week, inside working hours, take the gaps between calendar events (or between the meetings listed under the day bullets when no calendar is connected). Leave 15 minutes after each meeting and keep lunch (12-1pm unless the user says otherwise) free. Fill the gaps with Do items first, then Schedule items, longest first.
+From now until the same time 7 days out, take only working hours on working days, minus lunch. Within those, take the gaps between calendar events (or between the meetings listed under the day bullets when no calendar is connected). Leave 15 minutes after each meeting and drop gaps shorter than 15 minutes. Fill the gaps with Do items first, earliest days first, then Schedule items, longest first. Never place a block outside working hours, even when items do not fit; list them as unscheduled instead.
 
 ### 4. Show the plan and wait
 
 In chat, show:
 
 1. The matrix: each quadrant with its items, the estimate, and the account, area, or project.
-2. The timeboxes, day by day: `Tue 1/5 9-9:45am  Send the revised proposal (Sample Company, Inc.)`.
+2. The timeboxes, day by day across the 7 days: `Tue 1/5 9-9:45am  Send the revised proposal (Sample Company, Inc.)`.
 3. What did not fit, and how much time it needs.
 
 Wait for the user to approve or change it. Never write before approval.
@@ -55,7 +62,7 @@ Wait for the user to approve or change it. Never write before approval.
 After approval:
 
 1. **Priorities.** Replace the open items under `#### Priorities` in `Top of Mind.md` with the Do items, copied word for word with their dates, in order. Keep every `- [x]` line already there.
-2. **Weekly file.** Add each timebox under its day bullet in `Notes/Daily/YYYY-WN.md`, one tab deep, in time order with the meetings already there:
+2. **Week files.** Add each timebox under its day bullet in the week file for that day, `Notes/Daily/YYYY-WN.md`, one tab deep, in time order with the meetings already there. When the window crosses into next week, write those days into next week's file:
 
    ```
    - Tue 1/5
@@ -68,7 +75,7 @@ After approval:
 
 ### 6. Report
 
-One line each: items per quadrant, timeboxes written to the weekly file, events created on the calendar, and the time still needed for what did not fit.
+One line each: items per quadrant, timeboxes written per week file, events created on the calendar, and the time still needed for what did not fit in the 7 days.
 
 ## Rules
 

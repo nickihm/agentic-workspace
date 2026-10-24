@@ -17,7 +17,7 @@ The newsletters to read are listed in `$N/Newsletters.md`:
 # Newsletters
 
 Group by: newsletter
-Mark read: no
+Mark read: yes
 
 - Sample Weekly: news@sample-weekly.example
 - Industry Briefing: subject contains "Industry Briefing"
@@ -25,7 +25,7 @@ Mark read: no
 
 - One line per newsletter: a short name, then a sender address or a subject phrase that identifies it.
 - `Group by`: `newsletter` (one section per newsletter) or `topic` (one section per topic, across newsletters).
-- `Mark read`: `yes` to mark source emails as read after the digest is written. Default `no`.
+- `Mark read`: `yes` (the default) marks each source email as read once the digest is written. `no` leaves them unread.
 
 If the file is missing, search the last 30 days of email for likely newsletters (senders that send on a schedule, subjects with "newsletter", "digest", "weekly", "briefing", or "roundup"). Show the list, ask the user which to keep and how to set the two options, then create the file. Never add a sender the user did not approve.
 
@@ -76,13 +76,13 @@ Use `--group-by topic` if `Newsletters.md` says so. Add `--dry-run` first if any
 
 The script drops items from emails received outside the window and items whose URL or title appears in an earlier digest. It writes `$N/TODAY.md` (or `TODAY-2.md` if that exists), a Sources table of every email cited, `WORK/mark_read.json`, and `$N/.last-scan.json`.
 
-## 4. Mark source emails read (only if `Mark read: yes`)
+## 4. Mark source emails read
 
-For each ID in `WORK/mark_read.json`, call the mail tool's mark-read operation. Mark only those emails. Count failures and report them; do not retry in a loop.
+Unless `Newsletters.md` says `Mark read: no`, call the mail tool's mark-read operation for each ID in `WORK/mark_read.json` once the digest file exists. Mark only those emails; a newsletter with nothing in the digest stays unread. Count failures and report them; do not retry in a loop.
 
 ## 5. Report
 
-In a few lines: the file path, the item count per newsletter or topic, the number of emails cited (and marked read, if enabled), and any gaps such as cut-off bodies, expired logins, or newsletters with nothing in the window.
+In a few lines: the file path, the item count per newsletter or topic, the number of emails cited and marked read, and any gaps such as cut-off bodies, expired logins, or newsletters with nothing in the window.
 
 ## Rules
 
