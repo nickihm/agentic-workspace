@@ -8,6 +8,8 @@ The knowledge base. An Obsidian vault organized by the PARA method: Projects, Ar
   - `YYYY-WN.md` — one file per ISO week. Seven day bullets at the top, then ongoing sections (`Home`, `Health`, `Paperwork`, ...) with checkbox to-dos. Items under a day bullet belong to that day and do not carry forward. Items under a section carry forward until checked.
   - `Long Term.md` — a table with one row per week and one column per life area. The week-level calendar. `new-week-file` pulls the upcoming row into the new week file.
   - `Top of Mind.md` — the running summary. Priorities first, then one block per account, then an `Areas` group and a `Projects` group: a short summary of the latest activity and the open to-dos for each.
+  - `Calendars.md` — the calendars to read and your working hours, for `weekly-calendar-sync` and `prioritizing-tasks`.
+  - `Important Email.md` — your email addresses, senders to ignore, and the last scan time, for `collect-email-important`.
   - `Archive/` — finished week files and past `Long Term.md` rows, moved here by `archive-week`.
 - `Accounts/` — one folder per client, employer, or organization, named after it. Each has a note with the same name (overview, locations, contacts, projects, interaction log), an `Assets/` folder, and one subfolder per project. Finished accounts move to `Accounts/Archive/`.
 - `Projects/` — work with a goal and an end date that is not tied to one account. One folder per project with a note of the same name (overview, goal, timeline, status, todos, log) and an `Assets/` folder.

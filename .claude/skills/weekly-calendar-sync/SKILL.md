@@ -36,6 +36,7 @@ If the file is missing, ask the user which calendars to read and create it. Neve
    - Overlapping or back-to-back events: list both.
    - All-day events: skip unless they matter (travel, out of office, holiday).
    - Events before 7am or after 9pm: skip unless notable.
+   - Events titled `Focus: ...`: skip. `prioritizing-tasks` created them and already wrote their bullets.
 5. **Skip duplicates.** If a bullet with the same name and time is already under that day, do not add it again.
 6. **Report** the count added per day in one line.
 

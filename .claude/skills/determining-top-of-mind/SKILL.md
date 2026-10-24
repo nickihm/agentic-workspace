@@ -32,7 +32,7 @@ This rule covers checkboxes only. Every account, area, and project block still s
 A `- [x]` in `Top of Mind.md` is the user's. Never turn it back into `- [ ]`. Keep any note the user appended to the line, word for word.
 
 - Read the existing file before you rebuild it, and carry every `- [x]` line across with its trailing note.
-- The same applies to `#### Priorities`. The user writes that section. Copy it across unchanged, except for the strike in step 3.
+- The same applies to `#### Priorities`. The user writes that section, or `prioritizing-tasks` does with the user's approval. Copy it across unchanged, except for the strike in step 3.
 
 ## Steps
 

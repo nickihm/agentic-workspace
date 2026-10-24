@@ -9,7 +9,7 @@ One folder, one git repo, one Obsidian vault. It holds a personal knowledge base
 ```
 workspace/
 ├── AGENTS.md          # This file
-├── .claude/           # Agent config: skills, agents, settings
+├── .claude/           # Agent config: skills/, agents/ (app-architect, app-developer, pr-reviewer, qa-reviewer), settings
 ├── .obsidian/         # Obsidian vault config (the vault root is this folder)
 ├── Apps/              # Code projects, one git repo per subdirectory
 │   └── PORTS.md       # Port inventory for every app and service on this machine
@@ -40,7 +40,7 @@ The workspace root is a git repo. It tracks `AGENTS.md`, `.claude/`, `.obsidian/
 
 ## Apps
 
-Each directory under `Apps/` is a separate code project and a separate git repo. Navigate into the right one before running git commands. Document each app in its own `README.md`; add a short entry below when it is stable enough to describe.
+Each directory under `Apps/` is a separate code project and a separate git repo, named in kebab-case (`Apps/expense-tracker/`). Navigate into the right one before running git commands. Each app has a `README.md` (what it is, how to run and test it, where its log is) and an `ARCHITECTURE.md` (written by the `app-architect` agent). Build and change apps with the `building-apps` skill; add a short entry below when an app is stable enough to describe.
 
 | App | Folder | Stack | Run | Test |
 |---|---|---|---|---|
@@ -71,17 +71,24 @@ Skills live in `.claude/skills/<name>/SKILL.md`. Load the matching skill before 
 | `archive-week` | Move finished week files and Long Term rows into `Notes/Daily/Archive/`. |
 | `weekly-calendar-sync` | Add the week's calendar events under the day bullets. |
 | `determining-top-of-mind` | Rebuild `Notes/Daily/Top of Mind.md` from open highlights in account, area, and project notes. |
+| `prioritizing-tasks` | Sort Top of Mind to-dos with the Eisenhower matrix, estimate time, and timebox them in the week file and calendar. |
 | `completing-tasks` | Mark a task done in `Top of Mind.md` and strike its highlight in the source note. |
 | `setup-inbox` | Point screenshots and browser downloads at `Inbox/`. Run once per machine. |
 | `inbox-processing` | File everything in `Inbox/` into the right note, account, or calendar. Screenshots go to the matching `Assets/` folder and log. |
 | `meeting-prepper` | Write a dated prep entry in an account, area, or project note before a meeting. |
 | `opening-notes` | Open a note in Obsidian by name. |
 | `drafting-email` | Draft an email in the user's voice, matched to `Assets/Samples/Emails/`. |
+| `collect-email-important` | Log email addressed to the user or needing a follow-up in the matching account, area, or project log. |
 | `collect-email-newsletters` | Digest newsletters that arrived since the last run into a dated note. |
 | `researching` | Answer a question from primary sources with citations. |
 | `architecture-diagram` | Draw architecture, data flow, network, and deployment diagrams as draw.io files. |
 | `building-decks` | Build a `.pptx` from a template in `Assets/Templates/`. |
 | `financial-modeling` | Build a cost, price, or financial model as an Excel workbook with live formulas. |
+| `building-apps` | Build or change an app in `Apps/`: architect designs (large model), developer builds (small or medium model), reviewer and QA check. |
+| `reviewing-changes` | Review a pull request, branch, or uncommitted changes in an app with the `pr-reviewer` agent (large model). |
+| `managing-branches` | Branch, commit, push, open, update, and merge pull requests. |
+
+Agents live in `.claude/agents/<name>.md`, each with its model set: `app-architect` and `pr-reviewer` use a large model, `app-developer` a medium one, and `qa-reviewer` a medium one.
 
 ## Git workflow
 
@@ -104,6 +111,6 @@ Make only the requested changes and do not alter other functionality. Implement 
 1. Replace the sample content in `Notes/Accounts/`, `Notes/Areas/`, `Notes/Projects/`, and `Notes/Daily/` with your own.
 2. Fill the Apps table above and `Apps/PORTS.md` as you add projects.
 3. Set the category columns in `Notes/Daily/Long Term.md` to your own life areas and extend the table with `.claude/skills/archive-week/scripts/long_term_rows.py`.
-4. Create `Notes/Daily/Calendars.md` if you use `weekly-calendar-sync`.
+4. Create `Notes/Daily/Calendars.md` if you use `weekly-calendar-sync` or `prioritizing-tasks`, and `Notes/Daily/Important Email.md` if you use `collect-email-important`. Each skill offers to create its file on first run.
 5. Add your document templates (`.pptx`, `.docx`, `.xlsx`) to `Assets/Templates/`.
 6. Run the `setup-inbox` skill so screenshots and downloads land in `Inbox/`.
