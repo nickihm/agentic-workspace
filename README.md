@@ -1,6 +1,39 @@
 # Workspace Template
 
-A monorepo layout for one person working with AI coding agents: a knowledge base, the code projects, and the files that move in and out, all in one Obsidian vault and one git repo.
+Automate work functions by connecting your favorite AI agent or agents to a unified knowledge workspace.
+### Knowledge Management
+
+This workspace acts as a personal knowledge management system or 'second brain' and works with Obsidian.
+Everything is stored by projects, area/domain, or account (i.e. client account). Accounts can also have their own projects. All interactions, important files, contacts are stored in this structure.
+Agents connected to the base directory understand the structure and save information accordingly. Agents can also search and answer questions against your knowledge base.
+- inbox-processing
+### Getting Top of Mind
+
+Your activities with accounts, projects, and areas are stored in their interaction logs. Action items, updates can be buried in those interactions. 
+The skill 'determining top of mind' will scan all your accounts/projects/areas for latest activity and product an executive summary outline with a 3-5 sentence summary of the account/project/area and action items and todos. This gives you a bird-eye view of where everything stands and what needs to be done.
+### Prioritizing and Timeboxing
+
+The 'prioritizing tasks' skill goes through your top of mind todos and helps you prioritizing based on the Eisenhower matrix, estimates required time effort, and timeboxes your calendar and weekly todo file.
+### Long Term Planning
+- Generate weekly todo file
+- Long Term file and integration in to weekly file generation
+### Knowledge Work
+- research
+- build decks
+- create excel models
+- create diagrams
+### Managing Communication
+- collect-email-important
+- meeting-prepper
+- drafting-email
+- complete the task
+- collect-email-newsletters
+### Building Apps
+- Apps folder structure
+- skills for SDLC -- architecture, build, code review, QA, branch management
+- Tracking ports in PORTS
+
+## Workspace Structure
 
 ```
 workspace/
@@ -13,28 +46,4 @@ workspace/
 └── Outbox/       # Finished deliverables
 ```
 
-## Use it
-
-1. Click **Use this template** on GitHub, or clone and `rm -rf .git && git init`.
-2. Open the folder in Obsidian as a vault. The bundled plugins and settings load from `.obsidian/`.
-3. Read `AGENTS.md`, then follow its **Customizing this template** section.
-4. Tell your agent "set up my inbox". The `setup-inbox` skill points screenshots and browser downloads at `Inbox/`, and `inbox-processing` files them from there.
-
-## Weekly rhythm
-
-On Sunday, tell your agent "start a new week". The `starting-a-new-week` skill creates next week's file in `Notes/Daily/`, carries over unfinished to-dos, pulls in that week's row from `Long Term.md`, archives the finished week, and syncs your calendar.
-
-The scripts behind it are plain Python 3 with no dependencies:
-
-```bash
-python3 .claude/skills/new-week-file/scripts/new_week.py --dry-run
-python3 .claude/skills/archive-week/scripts/archive_week.py --dry-run
-```
-
-## Obsidian plugins included
-
-Outliner (on) and Show Hidden Files (installed, off; turn it on in Settings → Community plugins to see `.claude/` and other dot-folders). Each is the stock release in `.obsidian/plugins/`.
-
-## Use Cases
-
-### Knowl
+## Getting Started
