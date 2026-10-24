@@ -1,3 +1,11 @@
+---
+type: Project
+title: Sample Website Refresh
+description: 'Placeholder standalone project: goal, timeline, people, status, to-dos, and log.'
+tags:
+- project
+---
+
 ### Overview
 
 3-5 sentence summary of the project: what it is, why it matters, where it stands.

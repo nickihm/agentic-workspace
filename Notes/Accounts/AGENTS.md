@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Notes/Accounts Folder Guide
+description: One folder per client, employer, or organization, named after it in Title Case (Acme Corp/).
+tags:
+- folder-guide
+- notes
+---
+
 # Accounts
 
 One folder per client, employer, or organization, named after it in Title Case (`Acme Corp/`). Each holds:

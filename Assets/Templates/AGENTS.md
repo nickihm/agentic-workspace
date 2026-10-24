@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Assets/Templates Folder Guide
+description: 'Document templates go here: PowerPoint (.pptx, .potx), Word (.docx, .dotx), Excel (.xlsx, .xltx), and any other file a new document should start from.'
+tags:
+- folder-guide
+- assets
+---
+
 # Templates
 
 Document templates go here: PowerPoint (`.pptx`, `.potx`), Word (`.docx`, `.dotx`), Excel (`.xlsx`, `.xltx`), and any other file a new document should start from. Name each one in Title Case with spaces, for example `Company Deck.pptx` or `Statement of Work.docx`.

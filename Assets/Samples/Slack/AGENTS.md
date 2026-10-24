@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Assets/Samples/Slack Folder Guide
+description: Chat messages the user wrote (Slack, Teams, or similar), one or more per file.
+tags:
+- folder-guide
+- assets
+---
+
 # Slack Samples
 
 Chat messages the user wrote (Slack, Teams, or similar), one or more per file. Read one or two before drafting a chat message, to match length, tone, and formatting. This file is not a sample; skip it.

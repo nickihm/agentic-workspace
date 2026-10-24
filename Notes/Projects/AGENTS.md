@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Notes/Projects Folder Guide
+description: Work with a goal and an end date that is not tied to one account.
+tags:
+- folder-guide
+- notes
+---
+
 # Projects
 
 Work with a goal and an end date that is not tied to one account. One folder per project, named in Title Case, holding:

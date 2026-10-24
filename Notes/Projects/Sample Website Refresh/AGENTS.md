@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Notes/Projects/Sample Website Refresh Folder Guide
+description: A standalone project.
+tags:
+- folder-guide
+- notes
+---
+
 # Sample Website Refresh
 
 A standalone project. Placeholder content; replace or delete it.

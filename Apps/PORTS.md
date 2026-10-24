@@ -1,3 +1,12 @@
+---
+type: Port Inventory
+title: Port Inventory
+description: Every TCP port an app in Apps/ binds, and the free blocks for new ones.
+tags:
+- apps
+- ports
+---
+
 # Port Inventory
 
 Every TCP port an app or service on this machine is known to bind. Check this file before picking a port for anything new, and add the new port here in the same change.

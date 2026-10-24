@@ -14,6 +14,15 @@ Skill folder: `.claude/skills/collect-email-newsletters` (called `$S` below). Ou
 The newsletters to read are listed in `$N/Newsletters.md`:
 
 ```markdown
+---
+type: Settings
+title: Newsletters
+description: Newsletters to digest and the digest settings for collect-email-newsletters.
+tags:
+- settings
+- newsletters
+---
+
 # Newsletters
 
 Group by: newsletter
@@ -74,7 +83,7 @@ python3 -I $S/scripts/build_digest.py --work WORK --start START --end END --toda
 
 Use `--group-by topic` if `Newsletters.md` says so. Add `--dry-run` first if anything looks off; it writes `WORK/preview.md` and changes nothing else.
 
-The script drops items from emails received outside the window and items whose URL or title appears in an earlier digest. It writes `$N/TODAY.md` (or `TODAY-2.md` if that exists), a Sources table of every email cited, `WORK/mark_read.json`, and `$N/.last-scan.json`.
+The script drops items from emails received outside the window and items whose URL or title appears in an earlier digest. It writes `$N/TODAY.md` (or `TODAY-2.md` if that exists) with OKF frontmatter (`type: Newsletter Digest`), a Sources table of every email cited, `WORK/mark_read.json`, and `$N/.last-scan.json`.
 
 ## 4. Mark source emails read
 

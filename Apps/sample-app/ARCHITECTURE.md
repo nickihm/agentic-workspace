@@ -1,3 +1,13 @@
+---
+type: Architecture
+title: Sample App Architecture
+description: 'Design of the sample to-do app: goal, stack, structure, data, flows, critical flows, ports, and risks.'
+tags:
+- apps
+- sample-app
+- architecture
+---
+
 # Sample App Architecture
 
 ## Goal

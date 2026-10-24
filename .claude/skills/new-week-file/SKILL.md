@@ -19,6 +19,7 @@ The script refuses to overwrite an existing file. Do not pass `--force` unless t
 
 ## What the file contains, in order
 
+0. **Frontmatter.** OKF frontmatter with `type: Week`, the week as `title`, and its Monday-to-Sunday dates in `description`.
 1. **Day bullets.** Seven top-level dash bullets with the date: `- Mon 1/4` through `- Sun 1/10`. Tabs for indentation, dash bullets, no sub-items yet.
 2. **Long Term sections.** `Notes/Daily/Long Term.md` is a markdown table with one row per week: `Week | Start | End | <category columns...>`. For the row whose `Week` matches the new week, every non-empty category cell becomes a top-level section named after the column, and the cell's items (split on `<br>`) become plain `- item` sub-bullets. These are calendar context, not to-dos, so no checkboxes. Empty cells produce no section. No matching row means no Long Term sections.
 3. **Carry-forward.** Every top-level bullet in the prior week's file that is not a day bullet is an ongoing work area (`Home`, `Health`, `Paperwork`, ...). Copy each one with only its unchecked `- [ ]` items, keeping anything nested under those items. Drop `- [x]` items. Drop a section that ends up empty. Items under a day bullet stay in the old file even if unchecked: they were scoped to that day and are the record of what slipped.

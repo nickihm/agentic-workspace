@@ -1,3 +1,11 @@
+---
+type: Long Term Plan
+title: Long Term
+description: Calendar of weeks, one row per week and one column per life area, for big dates and goals.
+tags:
+- daily
+- planning
+---
 
 | Week   | Start  | End    | Work           | Home                        | Family          | Finance        |
 | ------ | ------ | ------ | -------------- | --------------------------- | --------------- | -------------- |

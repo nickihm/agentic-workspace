@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Inbox Folder Guide
+description: 'Where new files land: screenshots and browser downloads (pointed here by setup-inbox) and anything the user drops in.'
+tags:
+- folder-guide
+- inbox
+---
+
 # Inbox
 
 Where new files land: screenshots and browser downloads (pointed here by `setup-inbox`) and anything the user drops in. `inbox-processing` files each one into `Notes/` or `Apps/` and deletes the original. An empty inbox is the goal.

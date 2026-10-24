@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Apps Folder Guide
+description: Apps you build, one folder each, named in kebab-case (expense-tracker/).
+tags:
+- folder-guide
+- apps
+---
+
 # Apps
 
 Apps you build, one folder each, named in kebab-case (`expense-tracker/`). Each app is its own git repo, so the workspace repo ignores everything here except `PORTS.md`, this file, and `sample-app/`.

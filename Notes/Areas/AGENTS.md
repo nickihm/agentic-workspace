@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Notes/Areas Folder Guide
+description: 'Ongoing responsibilities with no end date: health, finance, home, career.'
+tags:
+- folder-guide
+- notes
+---
+
 # Areas
 
 Ongoing responsibilities with no end date: health, finance, home, career. One folder per area, named in Title Case, holding:

@@ -93,7 +93,10 @@ def archive_long_term(daily: Path, cutoff: dt.date, dry_run: bool) -> int:
         return len(past)
     dest.parent.mkdir(parents=True, exist_ok=True)
     if not dest.exists():
-        dest.write_text(f"\n{header}\n{sep}\n")
+        dest.write_text(
+            "---\ntype: Long Term Plan\ntitle: Long Term Archive\n"
+            "description: Past rows of the Long Term calendar of weeks, moved here by archive-week.\n"
+            f"tags:\n- daily\n- archive\n---\n\n{header}\n{sep}\n")
     with dest.open("a") as f:
         f.write("\n".join(past) + "\n")
     src.write_text("\n".join(keep) + "\n")

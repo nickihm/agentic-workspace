@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Assets Folder Guide
+description: Reusable material that is not about one account, project, or area.
+tags:
+- folder-guide
+- assets
+---
+
 # Assets
 
 Reusable material that is not about one account, project, or area.

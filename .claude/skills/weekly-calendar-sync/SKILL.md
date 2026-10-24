@@ -16,7 +16,7 @@ List the calendars to read in `Notes/Daily/Calendars.md`, one per line, with the
 - Work: you@company.com
 ```
 
-If the file is missing, ask the user which calendars to read and create it. Never hard-code calendar IDs in this skill.
+If the file is missing, ask the user which calendars to read and create it, starting with OKF frontmatter (`type: Settings`, `title: Calendars`, a one-line `description`, `tags: [settings, calendar]`). Never hard-code calendar IDs in this skill.
 
 ## Steps
 

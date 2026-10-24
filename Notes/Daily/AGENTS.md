@@ -1,3 +1,12 @@
+---
+type: Folder Guide
+title: Notes/Daily Folder Guide
+description: 'Planning files: weekly to-do files, Long Term, Top of Mind, skill settings, and the Daily archive.'
+tags:
+- folder-guide
+- notes
+---
+
 # Daily
 
 The planning files. See `Notes/AGENTS.md` for what each one holds.

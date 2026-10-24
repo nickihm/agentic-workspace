@@ -1,3 +1,11 @@
+---
+type: Account
+title: Sample Company, Inc.
+description: 'Placeholder client account: overview, contacts, projects, and interaction log.'
+tags:
+- account
+---
+
 ### Overview
 
 3-5 sentence summary.

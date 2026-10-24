@@ -46,6 +46,28 @@ def week_file(daily: Path, year: int, week: int) -> Path:
     return daily / f"{year}-W{week}.md"
 
 
+def strip_frontmatter(text: str) -> str:
+    """Drop a leading YAML frontmatter block (OKF), if any."""
+    m = re.match(r"---\n.*?\n---\n", text, re.S)
+    return text[m.end():] if m else text
+
+
+def frontmatter(year: int, week: int) -> list[str]:
+    start = monday(year, week)
+    end = start + dt.timedelta(days=6)
+    return [
+        "---",
+        "type: Week",
+        f"title: {year}-W{week}",
+        f"description: To-do file for the week of Mon {start:%Y-%m-%d} to Sun {end:%Y-%m-%d}.",
+        "tags:",
+        "- daily",
+        "- week",
+        "---",
+        "",
+    ]
+
+
 def day_bullets(year: int, week: int) -> list[str]:
     start = monday(year, week)
     return [
@@ -108,7 +130,7 @@ def carry_forward(prior: Path) -> list[str]:
     """Top-level non-day sections from the prior week, unchecked items only."""
     if not prior.exists():
         return []
-    lines = prior.read_text().splitlines()
+    lines = strip_frontmatter(prior.read_text()).splitlines()
     out: list[str] = []
     section: list[str] = []
     keep_depth: int | None = None  # depth of the last kept `- [ ]` item
@@ -166,7 +188,7 @@ def main() -> int:
         print(f"exists, not overwriting: {target}", file=sys.stderr)
         return 1
 
-    lines = day_bullets(year, week)
+    lines = frontmatter(year, week) + day_bullets(year, week)
     lines += long_term_sections(daily / "Long Term.md", year, week)
     lines += carry_forward(prior)
     content = "\n".join(lines) + "\n"
