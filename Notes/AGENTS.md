@@ -9,9 +9,9 @@ The knowledge base. An Obsidian vault organized by the PARA method: Projects, Ar
   - `Long Term.md` — a table with one row per week and one column per life area. The week-level calendar. `new-week-file` pulls the upcoming row into the new week file.
   - `Top of Mind.md` — the running summary. Priorities first, then one block per account, then an `Areas` group and a `Projects` group: a short summary of the latest activity and the open to-dos for each.
   - `Archive/` — finished week files and past `Long Term.md` rows, moved here by `archive-week`.
-- `Accounts/` — one folder per client, employer, or organization, named after it. Each has a note with the same name (overview, locations, contacts, projects, interaction log) and one subfolder per project. Finished accounts move to `Accounts/Archive/`.
-- `Projects/` — work with a goal and an end date that is not tied to one account. One folder per project with a note of the same name (overview, goal, timeline, status, todos, log).
-- `Areas/` — ongoing responsibilities with no end date: health, finance, home, career. One folder per area with a note of the same name (overview, projects, interaction log), like an account.
+- `Accounts/` — one folder per client, employer, or organization, named after it. Each has a note with the same name (overview, locations, contacts, projects, interaction log), an `Assets/` folder, and one subfolder per project. Finished accounts move to `Accounts/Archive/`.
+- `Projects/` — work with a goal and an end date that is not tied to one account. One folder per project with a note of the same name (overview, goal, timeline, status, todos, log) and an `Assets/` folder.
+- `Areas/` — ongoing responsibilities with no end date: health, finance, home, career. One folder per area with a note of the same name (overview, projects, interaction log) and an `Assets/` folder, like an account.
 - `Resources/` — reference material by topic: articles, clippings, prompts, how-tos. `Resources/Newsletters/` holds the digests from `collect-email-newsletters`. Stale material moves to `Resources/Archive/`.
 - `Archive/` — anything from Projects or Areas that is finished or inactive.
 
@@ -22,6 +22,7 @@ The knowledge base. An Obsidian vault organized by the PARA method: Projects, Ar
 - Tabs for indentation in bullet lists. Dash bullets. Checkboxes (`- [ ]`) only for things that get done.
 - Dates as `YYYY-MM-DD` in file names and interaction logs, newest first in logs.
 - Highlight follow-ups and action items in interaction logs with `==double equals==` so they stand out in Obsidian.
+- Images and screenshots go in the `Assets/` folder of the account, area, or project they belong to (a project's own `Assets/`, not its account's), named `YYYY-MM-DD HH.MM.SS <Short Description>.png`. Embed them in the log entry they belong to with the full vault path: `![[Notes/Accounts/<Name>/Assets/<file>]]`. `Assets` is a reserved folder name; never name a project `Assets`.
 - Obsidian may write non-breaking spaces into files. When an exact-match edit fails, use a script.
 
 ## Where a new note goes

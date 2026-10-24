@@ -8,7 +8,7 @@ workspace/
 ├── .claude/      # Skills and agent config
 ├── .obsidian/    # Obsidian vault config and plugins
 ├── Apps/         # Code projects, one git repo each (ignored except PORTS.md)
-├── Inbox/        # Files to process
+├── Inbox/        # Screenshots and downloads land here, to be filed (not tracked)
 ├── Notes/        # Knowledge base (PARA + Daily + Accounts)
 └── Outbox/       # Finished deliverables
 ```
@@ -18,6 +18,7 @@ workspace/
 1. Click **Use this template** on GitHub, or clone and `rm -rf .git && git init`.
 2. Open the folder in Obsidian as a vault. The bundled plugins and settings load from `.obsidian/`.
 3. Read `AGENTS.md`, then follow its **Customizing this template** section.
+4. Tell your agent "set up my inbox". The `setup-inbox` skill points screenshots and browser downloads at `Inbox/`, and `inbox-processing` files them from there.
 
 ## Weekly rhythm
 
@@ -33,3 +34,7 @@ python3 .claude/skills/archive-week/scripts/archive_week.py --dry-run
 ## Obsidian plugins included
 
 Outliner (on) and Show Hidden Files (installed, off; turn it on in Settings → Community plugins to see `.claude/` and other dot-folders). Each is the stock release in `.obsidian/plugins/`.
+
+## Use Cases
+
+### Knowl

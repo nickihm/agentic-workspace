@@ -2,6 +2,10 @@
 Apps/*
 !Apps/PORTS.md
 
+# Screenshots and downloads stay local until inbox-processing files them
+Inbox/*
+!Inbox/.gitkeep
+
 # Local-only agent settings
 .claude/settings.local.json
 
@@ -14,6 +18,9 @@ Apps/*
 .env.*
 *.pem
 *.key
+
+# Python bytecode
+__pycache__/
 
 # OS and editor noise
 .DS_Store
