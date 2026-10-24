@@ -26,37 +26,19 @@ Your agent sorts your top-of-mind to-dos using the Eisenhower matrix, estimates 
 
 ### Long-Term Planning
 
-Two files keep you looking ahead.
-
-- **Weekly to-do file.** Say "Start a new week" on Sunday. Unfinished to-dos carry over, and your meetings are added.
-- **Long Term file.** A calendar of weeks for big dates and goals. Each one appears in your weekly file when its week arrives.
+Each week gets its own to-do file. Say "Start a new week" on Sunday, and your agent builds next week's file, carries over unfinished to-dos, and adds your meetings. The Long Term file is a calendar of weeks for big dates and goals, and each one appears in your weekly file when its week arrives.
 
 ### Knowledge Work
 
-Your agent drafts the work, drawing on what your notes already say about the account or project.
-
-- **Research.** Answers with a source link for every claim.
-- **Presentations.** PowerPoint decks built on your own template.
-- **Financial models.** Excel workbooks for costs and pricing, with live formulas.
-- **Diagrams.** Systems and processes, editable in draw.io.
+Your agent drafts the work, drawing on what your notes already say about the account or project. It researches questions with a source link for every claim, builds PowerPoint decks on your own template, creates Excel models for costs and pricing with live formulas, and draws diagrams of systems and processes that you can edit in draw.io.
 
 ### Managing Communication
 
-Email and meetings are where requests arrive and follow-ups get lost.
-
-- **Important email.** Pulls out the questions, requests, and deadlines waiting on you.
-- **Meeting prep.** Writes a recap, open items, and talking points into the meeting's notes.
-- **Email drafts.** Written in your own voice. Nothing is sent without your approval.
-- **Task completion.** Say "I sent the proposal," and it's checked off everywhere.
-- **Newsletter digest.** One line per story, with links.
+Email and meetings are where requests arrive and follow-ups get lost. Your agent reads your email for the questions, requests, and deadlines waiting on you and logs each one with the right account, project, or area. Before a meeting, it writes a recap, open items, and talking points into the meeting's notes. It drafts emails in your own voice and never sends anything without your approval. When you say "I sent the proposal," it checks the task off everywhere. It also turns your newsletters into a digest with one line per story and its link.
 
 ### Building Apps
 
-Build small tools of your own with your agent.
-
-- **Apps folder.** Each tool gets its own folder and version history.
-- **Software development skills.** Architecture, building, code review, QA, and branch management.
-- **Port tracking.** A ports list records where each app runs so apps don't conflict.
+Build small tools of your own with your agent. Each app gets its own folder and version history in the Apps folder. Software development skills guide your agent through architecture, building, code review, QA, and branch management, and a ports list records where each app runs so apps don't conflict.
 
 ## Workspace Structure
 
