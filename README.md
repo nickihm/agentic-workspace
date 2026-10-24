@@ -50,7 +50,11 @@ workspace/
 ├── .claude/                       # Skills and agents
 ├── .obsidian/                     # Obsidian settings and plugins
 ├── Apps/                          # Apps you build, one folder and git repo each
-│   └── PORTS.md                   # Where each app runs
+│   ├── PORTS.md                   # Where each app runs
+│   └── <app>/
+│       ├── README.md              # What it does, how to run and test it
+│       ├── ARCHITECTURE.md        # Design, data, and critical flows
+│       └── ...                    # The app's code and tests
 ├── Assets/
 │   ├── Templates/                 # Your PowerPoint, Word, and Excel templates
 │   └── Samples/                   # Example emails and messages in your voice

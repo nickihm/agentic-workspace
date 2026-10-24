@@ -26,7 +26,7 @@ workspace/
 └── Outbox/            # Files produced for someone else (reports, exports, deliverables)
 ```
 
-The workspace root is a git repo. It tracks `AGENTS.md`, `.claude/`, `.obsidian/`, `Notes/`, `Outbox/`, and `Apps/PORTS.md`. `Inbox/` is tracked as an empty folder only; its files stay local until they are filed. Each directory under `Apps/` is its own git repo with its own remote; the root `.gitignore` excludes them.
+The workspace root is a git repo. It tracks `AGENTS.md`, `.claude/`, `.obsidian/`, `Notes/`, `Outbox/`, and `Apps/PORTS.md`. `Inbox/` is tracked as an empty folder only; its files stay local until they are filed. Each directory under `Apps/` is its own git repo with its own remote; the root `.gitignore` excludes them, except `Apps/sample-app/`, which ships with the template as a working example.
 
 ## Notes
 
@@ -44,7 +44,7 @@ Each directory under `Apps/` is a separate code project and a separate git repo,
 
 | App | Folder | Stack | Run | Test |
 |---|---|---|---|---|
-| (none yet) | | | | |
+| Sample App (delete once you have your own) | `Apps/sample-app/` | Python standard library, one HTML page, JSON file | `python3 app.py` (port 8400) | `python3 -m unittest -v` |
 
 ## Ports
 

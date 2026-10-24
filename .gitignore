@@ -1,6 +1,7 @@
-# Each app is its own git repo; only the port inventory is tracked here
+# Each app is its own git repo; only the port inventory and the sample app are tracked here
 Apps/*
 !Apps/PORTS.md
+!Apps/sample-app/
 
 # Screenshots and downloads stay local until inbox-processing files them
 Inbox/*

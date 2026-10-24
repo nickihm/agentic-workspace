@@ -12,12 +12,11 @@ Live check: `lsof -nP -iTCP -sTCP:LISTEN`
 
 | Port | What | Mode | Bind |
 |---|---|---|---|
-| 5400 | Vite dev UI | `./run-dev.sh` | localhost |
-| 8400 | uvicorn API with reload | `./run-dev.sh` | localhost |
+| 8400 | Page and JSON API (Python standard library) | `python3 app.py` | 127.0.0.1 |
 
-Env: `SAMPLE_API_PORT` / `SAMPLE_UI_PORT`. Not managed by launchd; started by hand.
+Env: `SAMPLE_APP_PORT`. Started by hand; not a background service.
 
-Reserved for growth: 5401-5499 / 8401-8499.
+Reserved for growth: 5400-5499 / 8401-8499.
 
 ## System and background services
 
