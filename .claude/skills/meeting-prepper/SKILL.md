@@ -11,7 +11,7 @@ Write the prep for an upcoming meeting directly into the note it belongs to, as 
 
 Ask for anything missing:
 
-- **Who or what**: the account or project. It must match a folder in `Notes/Accounts/` or `Notes/Projects/`.
+- **Who or what**: the account, area, or project. It must match a folder in `Notes/Accounts/`, `Notes/Areas/`, or `Notes/Projects/`.
 - **Meeting title**: for example "Weekly Customer Office Hours" or "Quarterly Review".
 - **Date**: `YYYY-MM-DD`. Default to the next occurrence on the calendar, if one is connected.
 - **Anything the user wants raised**: agenda items, asks, deliverables.
@@ -38,7 +38,7 @@ From the sources, pull out:
 
 ### 2. Write the prep entry
 
-Insert it at the top of `### Interaction Log` (account note) or `### Log` (project note). Match the note's existing format. The title ends in `(prep)` so it reads as forward-looking:
+Insert it at the top of `### Interaction Log` (account or area note) or `### Log` (project note). Match the note's existing format. The title ends in `(prep)` so it reads as forward-looking:
 
 ```markdown
 - **YYYY-MM-DD - Meeting title (prep)**

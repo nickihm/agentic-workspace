@@ -32,4 +32,4 @@ python3 .claude/skills/archive-week/scripts/archive_week.py --dry-run
 
 ## Obsidian plugins included
 
-Periodic Notes, Outliner, Full Calendar, Excalidraw, Print, PDF Printer, Show Hidden Files. Each is the stock release in `.obsidian/plugins/` with default settings, except Periodic Notes, which points daily and weekly notes at `Notes/Daily/`.
+Outliner (on) and Show Hidden Files (installed, off; turn it on in Settings → Community plugins to see `.claude/` and other dot-folders). Each is the stock release in `.obsidian/plugins/`.

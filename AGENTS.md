@@ -13,7 +13,7 @@ workspace/
 ├── .obsidian/         # Obsidian vault config (the vault root is this folder)
 ├── Apps/              # Code projects, one git repo per subdirectory
 │   └── PORTS.md       # Port inventory for every app and service on this machine
-├── Assets/            # Reusable material: Templates/ for documents, Samples/ for example emails and messages
+├── Assets/            # Reusable material: Templates/ for documents (see its AGENTS.md), Samples/ for example emails and messages
 ├── Inbox/             # Files dropped here for processing (downloads, exports, screenshots)
 ├── Notes/             # Knowledge base (PARA method, Obsidian markdown)
 │   ├── AGENTS.md      # Index of the knowledge base; read it before working in Notes/
@@ -34,7 +34,7 @@ The workspace root is a git repo. It tracks `AGENTS.md`, `.claude/`, `.obsidian/
 
 - Weekly notes live in `Notes/Daily/`, one file per ISO week (`YYYY-WN.md`, no zero-padding).
 - `Notes/Daily/Long Term.md` is a table with one row per week and one column per life area. It is the week-level calendar.
-- `Notes/Daily/Top of Mind.md` is the running summary: priorities first, then one block per account and project with the latest activity and open to-dos.
+- `Notes/Daily/Top of Mind.md` is the running summary: priorities first, then one block per account, area, and project with the latest activity and open to-dos.
 - Name new folders and documents in Title Case with spaces, not kebab-case.
 - Obsidian may write non-breaking spaces into files. When an exact-match edit fails, use a script instead of the editor.
 
@@ -69,10 +69,10 @@ Skills live in `.claude/skills/<name>/SKILL.md`. Load the matching skill before 
 | `new-week-file` | Create next week's `Notes/Daily/YYYY-WN.md` with carry-forward and Long Term items. |
 | `archive-week` | Move finished week files and Long Term rows into `Notes/Daily/Archive/`. |
 | `weekly-calendar-sync` | Add the week's calendar events under the day bullets. |
-| `determining-top-of-mind` | Rebuild `Notes/Daily/Top of Mind.md` from open highlights in account and project notes. |
+| `determining-top-of-mind` | Rebuild `Notes/Daily/Top of Mind.md` from open highlights in account, area, and project notes. |
 | `completing-tasks` | Mark a task done in `Top of Mind.md` and strike its highlight in the source note. |
 | `inbox-processing` | File everything in `Inbox/` into the right note, account, or calendar. |
-| `meeting-prepper` | Write a dated prep entry in an account or project note before a meeting. |
+| `meeting-prepper` | Write a dated prep entry in an account, area, or project note before a meeting. |
 | `opening-notes` | Open a note in Obsidian by name. |
 | `drafting-email` | Draft an email in the user's voice, matched to `Assets/Samples/Emails/`. |
 | `collect-email-newsletters` | Digest newsletters that arrived since the last run into a dated note. |
@@ -99,8 +99,8 @@ Make only the requested changes and do not alter other functionality. Implement 
 
 ## Customizing this template
 
-1. Replace the sample content in `Notes/Accounts/` and `Notes/Daily/` with your own.
+1. Replace the sample content in `Notes/Accounts/`, `Notes/Areas/`, `Notes/Projects/`, and `Notes/Daily/` with your own.
 2. Fill the Apps table above and `Apps/PORTS.md` as you add projects.
 3. Set the category columns in `Notes/Daily/Long Term.md` to your own life areas and extend the table with `.claude/skills/archive-week/scripts/long_term_rows.py`.
 4. Create `Notes/Daily/Calendars.md` if you use `weekly-calendar-sync`.
-5. Set the Obsidian daily and weekly note folders in `.obsidian/plugins/periodic-notes/data.json` if you rename `Notes/Daily/`.
+5. Add your document templates (`.pptx`, `.docx`, `.xlsx`) to `Assets/Templates/`.

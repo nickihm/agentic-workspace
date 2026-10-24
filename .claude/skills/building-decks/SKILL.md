@@ -15,7 +15,7 @@ Look in `Assets/Templates/` for `.pptx` and `.potx` files.
 
 - One template: use it.
 - Several: list them and ask which one, unless the request names one (for example "use the dark template").
-- None: say so, and offer to continue with the plain python-pptx default template. Mention that adding the user's own template to `Assets/Templates/` gives branded slides. To use the default, pass a blank deck made with `python3 -c 'from pptx import Presentation; Presentation().save("/tmp/Default.pptx")'`.
+- None: say so, and ask the user to add their template to `Assets/Templates/` (see `Assets/Templates/AGENTS.md`). If they would rather not, offer to continue with the plain python-pptx default template. To use the default, pass a blank deck made with `python3 -c 'from pptx import Presentation; Presentation().save("/tmp/Default.pptx")'`.
 
 Never edit the template file. The build writes a new file.
 
